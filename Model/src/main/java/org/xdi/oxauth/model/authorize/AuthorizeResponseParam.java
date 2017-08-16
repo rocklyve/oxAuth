@@ -8,7 +8,7 @@ package org.xdi.oxauth.model.authorize;
 
 /**
  * @author Javier Rojas Blum
- * @version December 15, 2015
+ * @version August 12, 2017
  */
 public interface AuthorizeResponseParam {
 
@@ -19,11 +19,12 @@ public interface AuthorizeResponseParam {
     public static final String SCOPE = "scope";
     public static final String ID_TOKEN = "id_token";
     public static final String STATE = "state";
+    public static final String SESSION_STATE = "session_state";
 
     /**
      * String that represents the End-User's login state at the OP.
      */
-    public static final String SESSION_STATE = "session_state";
+    public static final String SESSION_ID = "session_id";
 
     public static final String ACR_VALUES = "acr_values";
 }
