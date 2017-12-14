@@ -82,6 +82,9 @@ public class OpenIdConfigurationClient extends BaseClient<OpenIdConfigurationReq
             if (StringUtils.isNotBlank(entity)) {
                 JSONObject jsonObj = new JSONObject(entity);
 
+                if (jsonObj.has(POLICIES_ENDPOINT)) {
+                    getResponse().setPoliciesEndpoint(jsonObj.getString(POLICIES_ENDPOINT));
+                }
                 if (jsonObj.has(ISSUER)) {
                     getResponse().setIssuer(jsonObj.getString(ISSUER));
                 }

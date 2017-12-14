@@ -42,6 +42,8 @@ public class AppConfiguration implements Configuration {
     private String openIdConfigurationEndpoint;
     private String idGenerationEndpoint;
     private String introspectionEndpoint;
+    private String policiesPage;
+    private String policiesEndpoint;
 
     private Boolean sessionAsJwt = false;
 
@@ -274,6 +276,14 @@ public class AppConfiguration implements Configuration {
         return authorizationPage;
     }
 
+
+    public String getPoliciesPage() {
+        return policiesPage;
+    }
+
+    public String getPoliciesEndpoint() {
+        return policiesEndpoint;
+    }
     /**
      * Sets the URL of the authorization page.
      *

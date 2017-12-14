@@ -14,6 +14,7 @@ public interface ConfigurationResponseClaim {
 
     public static final String ISSUER = "issuer";
     public static final String AUTHORIZATION_ENDPOINT = "authorization_endpoint";
+    public static final String POLICIES_ENDPOINT = "policies_endpoint";
     public static final String TOKEN_ENDPOINT = "token_endpoint";
     public static final String USER_INFO_ENDPOINT = "userinfo_endpoint";
     public static final String CLIENT_INFO_ENDPOINT = "clientinfo_endpoint";

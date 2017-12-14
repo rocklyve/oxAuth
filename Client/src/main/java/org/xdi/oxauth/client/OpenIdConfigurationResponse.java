@@ -27,6 +27,7 @@ public class OpenIdConfigurationResponse extends BaseResponse implements Seriali
 
     private String issuer;
     private String authorizationEndpoint;
+    private String policiesEndpoint;
     private String tokenEndpoint;
     private String userInfoEndpoint;
     private String clientInfoEndpoint;
@@ -180,6 +181,24 @@ public class OpenIdConfigurationResponse extends BaseResponse implements Seriali
      */
     public void setAuthorizationEndpoint(String authorizationEndpoint) {
         this.authorizationEndpoint = authorizationEndpoint;
+    }
+
+    /**
+     * Returns the URL of the Policie endpoint.
+     *
+     * @return The URL of the Policie endpoint.
+     */
+    public String getPoliciesEndpoint() {
+        return policiesEndpoint;
+    }
+
+    /**
+     * Sets the URL of the Policie endpoint.
+     *
+     * @param policiesEndpoint The URL of the Policie endpoint.
+     */
+    public void setPoliciesEndpoint(String policiesEndpoint) {
+        this.policiesEndpoint = policiesEndpoint;
     }
 
     /**
